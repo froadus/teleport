@@ -96,7 +96,7 @@ public class Main extends JavaPlugin {
 			Player p = (Player) sender;
 			if (args.length > 0) {
 			    for (int i = 0; i < Main.area.size(); i++) {
-			        if (args[0].equalsIgnoreCase(args[0])) {
+			        if (Main.area.get(i).name.equalsIgnoreCase(args[0])) {
                         p.sendMessage("Namnet änvänds redan!");
 			            return true;
                     }
