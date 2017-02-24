@@ -88,7 +88,15 @@ public class Main extends JavaPlugin {
 					}
 				}
 			}
-            p.sendMessage("Platsen finns inte!");
+			if (args.length == 0) {
+                p.sendMessage(ChatColor.YELLOW + "--------- " + ChatColor.WHITE + "Platser för teleportering " + ChatColor.YELLOW + "---------------------");
+                p.sendMessage(ChatColor.GRAY + "För teleportering, använd: /w [platsnamn]");
+                for (int i = 0; i < Main.area.size(); i++) {
+                    p.sendMessage(ChatColor.GOLD + area.get(i).name);
+                }
+                return true;
+            }
+            p.sendMessage(ChatColor.RED + "Platsen finns inte!");
 			return true;
 		}
 
