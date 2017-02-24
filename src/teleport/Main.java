@@ -105,7 +105,7 @@ public class Main extends JavaPlugin {
 			if (args.length > 0) {
 			    for (int i = 0; i < Main.area.size(); i++) {
 			        if (Main.area.get(i).name.equalsIgnoreCase(args[0])) {
-                        p.sendMessage("Namnet änvänds redan!");
+                        p.sendMessage(ChatColor.RED + "Namnet änvänds redan!");
 			            return true;
                     }
                 }
@@ -143,7 +143,8 @@ public class Main extends JavaPlugin {
                     }
                 }
             }
-			return false;
+            p.sendMessage(ChatColor.RED + "Platsen finns inte!");
+			return true;
 		}
 
 		return false;
