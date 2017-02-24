@@ -1,0 +1,13 @@
+name: teleport
+main: teleport.Main
+version: 1.0
+commands:
+   newcuboid:
+      description: Lägg till en ny skyddad ruta
+      usage: /<command> [användare...]
+   listcuboid:
+      description: En lista på alla rutor som finns i världen
+      usage: /<command>
+   remcuboid:
+      description: Ta bort en ruta
+      usage: /<command> <rutid>
