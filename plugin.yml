@@ -5,12 +5,12 @@ commands:
    w:
       description: Teleportera till en plats
       usage: /<command> [platsnamn]
-   wadd:
+   w-add:
       description: Teleportera till en plats
       usage: /<command> [platsnamn]
-   wrem:
+   w-rem:
       description: Teleportera till en plats
       usage: /<command> [platsnamn]
-   wlist:
+   w-list:
       description: Lista på platser
       usage: /<command>

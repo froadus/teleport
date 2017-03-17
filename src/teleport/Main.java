@@ -100,7 +100,7 @@ public class Main extends JavaPlugin {
 			return true;
 		}
 
-		if (command.getName().equalsIgnoreCase("wadd") && sender instanceof Player) {
+		if (command.getName().equalsIgnoreCase("w-add") && sender instanceof Player) {
 			Player p = (Player) sender;
 			if (args.length > 0) {
 			    for (int i = 0; i < Main.area.size(); i++) {
@@ -121,7 +121,7 @@ public class Main extends JavaPlugin {
 			}
 		}
 
-		if (command.getName().equalsIgnoreCase("wlist") && sender instanceof Player) {
+		if (command.getName().equalsIgnoreCase("w-list") && sender instanceof Player) {
 			Player p = (Player) sender;
 			p.sendMessage(ChatColor.YELLOW + "--------- " + ChatColor.WHITE + "Platser för teleportering " + ChatColor.YELLOW + "---------------------");
 			p.sendMessage(ChatColor.GRAY + "För teleportering, använd: /w [platsnamn]");
