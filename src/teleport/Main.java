@@ -105,7 +105,7 @@ public class Main extends JavaPlugin {
 			if (args.length > 0) {
 			    for (int i = 0; i < Main.area.size(); i++) {
 			        if (Main.area.get(i).name.equalsIgnoreCase(args[0])) {
-                        p.sendMessage(ChatColor.RED + "Namnet änvänds redan!");
+                        p.sendMessage(ChatColor.RED + "Namnet används redan!");
 			            return true;
                     }
                 }
@@ -131,7 +131,7 @@ public class Main extends JavaPlugin {
 			return true;
 		}
 
-		if (command.getName().equalsIgnoreCase("wrem") && sender instanceof Player) {
+		if (command.getName().equalsIgnoreCase("w-rem") && sender instanceof Player) {
             Player p = (Player) sender;
             if (args.length > 0) {
                 for (int i = 0; i < Main.area.size(); i++) {
